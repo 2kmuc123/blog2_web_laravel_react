@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+// Colors
+$navbar-white: #fafafa;
+
+$navbar-active-color: #fafafa;
+$navbar-bg-active-color: #ff9900;
+$bg-light-blue: #00c8ffa1;
+$bg-dark-blue: #0beb1696;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+
+  .navbarscss {
+    color: $navbar-white;
+    background: $bg-light-blue;
+    background: -webkit-linear-gradient(55deg,$bg-light-blue 10%,$bg-dark-blue 90%);
+    background: linear-gradient(35deg,$bg-light-blue 10%,$bg-dark-blue 90%);
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 1px 2px 0 rgba(255, 255, 255, 0.4);
+    .navbar-brand{
+      font-size: 33px;
+    }
+    .nav-link{
+      color: greenyellow;
+      font-size: 15px;
+    }
+  }
+  .py-4{
+    padding-top: 0px;
+  }
+  
