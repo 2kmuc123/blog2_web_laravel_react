@@ -45,21 +45,31 @@ export const Home = () => {
             <div className="main-banner header-text">
                 <div className="container-fluid">
                     <div className="owl-banner owl-carousel">
-                        <div className="item">
-                            <img src={data[0] ? data[0].image2 : 'https://cdn.dribbble.com/users/1118376/screenshots/2741708/dog-walk-cycle.gif'} width='100%' alt="" height='600em' />
-                            <div className="item-content">
-                                <div className="main-content">
-                                    <div className="meta-category">
-                                        <span>{data[0] ? data[0].catagory : ''}</span>
-                                    </div>
-                                    <Link to={`${data[0] ? data[0].id : 0}`}><h4 >{data[0] ? data[0].title : ''}</h4></Link>
-                                    <ul className="post-info">
-                                        <li><a href="#">{data[0] ? data[0].name : ''}</a></li>
-                                        <li><a href="#">{data[0] ? data[0].created_at : ''}</a></li>
-                                        <li><a href="#">12 Comments</a></li>
-                                    </ul>
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src={data[0] ? data[0].image2 : 'https://cdn.dribbble.com/users/1118376/screenshots/2741708/dog-walk-cycle.gif'} width='100%' alt="" height='600em' />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src={data[1] ? data[1].image2 : 'https://cdn.dribbble.com/users/1118376/screenshots/2741708/dog-walk-cycle.gif'} width='100%' alt="" height='600em' />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src={data[2] ? data[2].image2 : 'https://cdn.dribbble.com/users/1118376/screenshots/2741708/dog-walk-cycle.gif'} width='100%' alt="" height='600em' />
                                 </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
